@@ -1,33 +1,33 @@
 variable "dns_security_profiles" {
   type        = map(any)
-  description = "DNS Security Profiles"
+  description = "SCM DNS Security Profiles"
   default     = {}
 }
 variable "file_blocking_profiles" {
   type        = map(any)
-  description = "File Blocking Profiles"
+  description = "SCM File Blocking Profiles"
   default     = {}
 }
 variable "anti_spyware_profiles" {
   type        = any
-  description = "Anti Spyware Profiles"
+  description = "SCM Anti Spyware Profiles"
   default     = {}
 }
 
 variable "wildfire_anti_virus_profiles" {
   type        = any
-  description = "SASE Wildfire Anti Virus Profiles"
+  description = "SCM Wildfire Anti Virus Profiles"
   default     = {}
 }
 
 variable "vulnerability_protection_profiles" {
   type        = map(any)
-  description = "SASE Vulnerability Protection Profiles"
+  description = "SCM Vulnerability Protection Profiles"
   default     = {}
 }
 
 variable "profile_groups" {
   type        = map(any)
-  description = "SASE Profile Groups"
+  description = "SCM Profile Groups"
   default     = {}
 }

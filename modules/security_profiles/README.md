@@ -33,12 +33,12 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_anti_spyware_profiles"></a> [anti\_spyware\_profiles](#input\_anti\_spyware\_profiles) | Anti Spyware Profiles | `any` | `{}` | no |
-| <a name="input_dns_security_profiles"></a> [dns\_security\_profiles](#input\_dns\_security\_profiles) | DNS Security Profiles | `map(any)` | `{}` | no |
-| <a name="input_file_blocking_profiles"></a> [file\_blocking\_profiles](#input\_file\_blocking\_profiles) | File Blocking Profiles | `map(any)` | `{}` | no |
-| <a name="input_profile_groups"></a> [profile\_groups](#input\_profile\_groups) | SASE Profile Groups | `map(any)` | `{}` | no |
-| <a name="input_vulnerability_protection_profiles"></a> [vulnerability\_protection\_profiles](#input\_vulnerability\_protection\_profiles) | SASE Vulnerability Protection Profiles | `map(any)` | `{}` | no |
-| <a name="input_wildfire_anti_virus_profiles"></a> [wildfire\_anti\_virus\_profiles](#input\_wildfire\_anti\_virus\_profiles) | SASE Wildfire Anti Virus Profiles | `any` | `{}` | no |
+| <a name="input_anti_spyware_profiles"></a> [anti\_spyware\_profiles](#input\_anti\_spyware\_profiles) | SCM Anti Spyware Profiles | `any` | `{}` | no |
+| <a name="input_dns_security_profiles"></a> [dns\_security\_profiles](#input\_dns\_security\_profiles) | SCM DNS Security Profiles | `map(any)` | `{}` | no |
+| <a name="input_file_blocking_profiles"></a> [file\_blocking\_profiles](#input\_file\_blocking\_profiles) | SCM File Blocking Profiles | `map(any)` | `{}` | no |
+| <a name="input_profile_groups"></a> [profile\_groups](#input\_profile\_groups) | SCM Profile Groups | `map(any)` | `{}` | no |
+| <a name="input_vulnerability_protection_profiles"></a> [vulnerability\_protection\_profiles](#input\_vulnerability\_protection\_profiles) | SCM Vulnerability Protection Profiles | `map(any)` | `{}` | no |
+| <a name="input_wildfire_anti_virus_profiles"></a> [wildfire\_anti\_virus\_profiles](#input\_wildfire\_anti\_virus\_profiles) | SCM Wildfire Anti Virus Profiles | `any` | `{}` | no |
 
 ## Outputs
 
