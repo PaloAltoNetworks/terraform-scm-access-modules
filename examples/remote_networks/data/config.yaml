@@ -1,7 +1,7 @@
 ---
 
 ipsec_crypto_profiles:
-  terraform-ipsec-crypto-moj1:
+  terraform-ipsec-crypto-test1:
     lifetime:
       days: 8
     esp:
@@ -12,7 +12,7 @@ ipsec_crypto_profiles:
     dh_group: group5
     lifesize:
       gb: 1
-  terraform-ipsec-crypto-moj2:
+  terraform-ipsec-crypto-test2:
     lifetime:
       minutes: 3600
     esp:
@@ -25,16 +25,14 @@ ipsec_crypto_profiles:
       mb: 1
 
 ike_crypto_profiles:
-  terraform-ike-crypto-moj1:
-    folder: Remote Networks
+  terraform-ike-crypto-test1:
     dh_group:
       - group5
     encryption:
       - aes-256-cbc
     hash:
       - sha256
-  terraform-ike-crypto-moj2:
-    folder: Remote Networks
+  terraform-ike-crypto-test2:
     dh_group:
       - group20
     encryption:

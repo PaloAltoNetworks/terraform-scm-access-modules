@@ -35,27 +35,27 @@ resource "scm_ipsec_crypto_profile" "this" {
   }, null)
 }
 
-#resource "scm_ike_gateway" "this" {
-#  folder = "Remote Networks"
-#  name = "terraform-ike-6"
-#  authentication = {
-#    pre_shared_key               = {
-#      key = "mytestkey1234"
-#    }
-#  }
-#  peer_address = {
-#    ip = "81.107.85.198"
-#  }
-#  protocol = {
-#    ikev1 = {
-#      dpd = {
-#        enable = true
-#      }
-#      ike_crypto_profile = "PaloAlto-Networks-IKE-Crypto"
-#    }
-#    version = "ikev1"
-#  }
-#}
+resource "scm_ike_gateway" "this" {
+  folder = "Remote Networks"
+  name   = "terraform-ike-6"
+  authentication = {
+    pre_shared_key = {
+      key = "mytestkey1234"
+    }
+  }
+  peer_address = {
+    ip = "81.107.85.198"
+  }
+  protocol = {
+    ikev1 = {
+      dpd = {
+        enable = true
+      }
+      ike_crypto_profile = "PaloAlto-Networks-IKE-Crypto"
+    }
+    version = "ikev1"
+  }
+}
 
 resource "scm_ipsec_tunnel" "this" {
   for_each = try(var.ipsec_tunnels, {})
@@ -92,9 +92,11 @@ resource "scm_remote_network" "this" {
   folder       = try(each.value.folder, "Remote Networks") # Default to Remote Networks Folder
   license_type = try(each.value.license_type, "FWAAS-AGGREGATE")
   name         = each.key
-  region       = try(each.value.region, null)                   # Fail out no region was set, required parameter
-  spn_name     = try(var.spns[each.value.region].spns[0], null) # Fail out no spn was set, required parameter
-  ipsec_tunnel = try(each.value.ipsec_tunnel, null)             # Fail out no ipsec tunnel was set, required parameter
+  region       = try(each.value.region, null) # Fail out no region was set, required parameter
+  #  spn_name     = try(var.spns[each.value.region].spns[0], null) # Fail out no spn was set, required parameter TODO
+  spn_name = try(var.spns[0], null) # Fail out no spn was set, required parameter
+
+  ipsec_tunnel = try(each.value.ipsec_tunnel, null) # Fail out no ipsec tunnel was set, required parameter
 }
 
 #locals {

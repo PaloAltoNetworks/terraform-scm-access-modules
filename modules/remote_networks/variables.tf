@@ -1,7 +1,7 @@
 variable "ike_crypto_profiles" {
   type        = map(any)
   description = "Map of IKE Crypto Profiles to Generate"
-  default     = null
+  default     = {}
 }
 
 variable "ipsec_crypto_profiles" {
@@ -28,8 +28,14 @@ variable "ipsec_tunnels" {
   default     = {}
 }
 
+#variable "spns" {
+#  description = "List of SPNs to reference with the allocated bandwidth"
+#  type        = map(any)
+#  default     = {}
+#}
+
 variable "spns" {
   description = "List of SPNs to reference with the allocated bandwidth"
-  type        = map(any)
-  default     = {}
+  type        = list(any)
+  default     = []
 }

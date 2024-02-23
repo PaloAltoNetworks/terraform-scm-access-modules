@@ -1,6 +1,6 @@
 provider "scm" {
   client_id     = "<SA>@<TSGID>.iam.panserviceaccount.com"
   client_secret = "<YOUR SECRET>"
-  scope         = "tsg_id:<TSGID>"
+  scope         = "profile tsg_id:<TSGID> email"
   host          = "api.sase.paloaltonetworks.com"
 }
