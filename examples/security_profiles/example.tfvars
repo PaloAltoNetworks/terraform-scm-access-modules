@@ -9,9 +9,9 @@ vulnerability_protection_profiles = {
           alert = true
         }
         host           = "any"
-        cve            = ["CVE-2017-11882"]
+        cves           = ["CVE-2017-11882"]
         packet_capture = "extended-capture"
-        vendor_id      = ["cisco"]
+        vendor_ids     = ["cisco"]
         severity       = ["critical"]
         category       = "exploit-kit"
         threat_name    = "test1"
@@ -22,9 +22,9 @@ vulnerability_protection_profiles = {
           drop = true
         }
         host           = "any"
-        cve            = ["CVE-2017-11882"]
+        cves           = ["CVE-2017-11882"]
         packet_capture = "single-packet"
-        vendor_id      = ["juniper"]
+        vendor_ids     = ["juniper"]
         severity       = ["high"]
         category       = "phishing"
         threat_name    = "test2"
@@ -35,9 +35,9 @@ vulnerability_protection_profiles = {
           reset_both = true
         }
         host           = "any"
-        cve            = ["CVE-2017-11882"]
+        cves           = ["CVE-2017-11882"]
         packet_capture = "extended-capture"
-        vendor_id      = ["microsoft"]
+        vendor_ids     = ["microsoft"]
         severity       = ["medium"]
         category       = "code-execution"
         threat_name    = "test3"
@@ -54,10 +54,10 @@ vulnerability_protection_profiles = {
           alert = true
         }
         host           = "any"
-        cve            = ["CVE-2017-11882"]
+        cves           = ["CVE-2017-11882"]
         packet_capture = "extended-capture"
-        vendor_id      = ["meta"]
-        severity       = ["critical", "high", "medium"]
+        vendor_ids     = ["meta"]
+        severities     = ["critical", "high", "medium"]
         category       = "protocol-anomaly"
         threat_name    = "protocol-freak"
       }
@@ -72,7 +72,7 @@ file_blocking_profiles = {
       {
         name        = "rule1"
         action      = "alert" #["alert", "block", "continue"]
-        file_type   = ["tar"] #["any", "dll", "png", "jpeg", "mp3", "docx", "exe", "zip", "tar", "pdf", "flash", "java", "sh", "other"]
+        file_types  = ["tar"] #["any", "dll", "png", "jpeg", "mp3", "docx", "exe", "zip", "tar", "pdf", "flash", "java", "sh", "other"]
         application = ["any"]
         direction   = "both" #["upload", "download", "both"]
       }
@@ -85,7 +85,7 @@ file_blocking_profiles = {
       {
         name        = "rule1"
         action      = "alert" #["alert", "block", "continue"]
-        file_type   = ["dll"] #["any", "dll", "png", "jpeg", "mp3", "docx", "exe", "zip", "tar", "pdf", "flash", "java", "sh", "other"]
+        file_types  = ["dll"] #["any", "dll", "png", "jpeg", "mp3", "docx", "exe", "zip", "tar", "pdf", "flash", "java", "sh", "other"]
         application = ["any"]
         direction   = "download" #["upload", "download", "both"]
       }
@@ -144,7 +144,7 @@ anti_spyware_profiles = {
         name           = "zeb-highcrit"
         threat_name    = "Zebrocy"
         packet_capture = "single-packet"
-        severity = [
+        severities = [
         "high", "critical"]
       },
       {
@@ -155,7 +155,7 @@ anti_spyware_profiles = {
         name           = "acropolis-any"
         threat_name    = "Acropolis"
         packet_capture = "extended-capture"
-        severity = [
+        severities = [
         "any"]
       },
       {
@@ -166,7 +166,7 @@ anti_spyware_profiles = {
         name           = "coinhive-med-high-crit"
         threat_name    = "CoinHive"
         packet_capture = "extended-capture"
-        severity = [
+        severities = [
         "medium", "high", "critical"]
       }
     ]
@@ -186,7 +186,7 @@ anti_spyware_profiles = {
         name           = "all-high-crit"
         threat_name    = "Bugs" # This should be optional but it is not
         packet_capture = "single-packet"
-        severity = [
+        severities = [
         "any"]
       }
     ]
@@ -199,25 +199,25 @@ wildfire_anti_virus_profiles = {
     folder      = "Shared"
     rules = [
       {
-        name        = "inspect-openai"
-        analysis    = "public-cloud" #["public-cloud", "private-cloud"]
-        application = ["openai-api"]
-        direction   = "both" # ["upload", "download", "both"]
-        file_type   = ["script"]
+        name         = "inspect-openai"
+        analysis     = "public-cloud" #["public-cloud", "private-cloud"]
+        applications = ["openai-api"]
+        direction    = "both" # ["upload", "download", "both"]
+        file_types   = ["script"]
       },
       {
-        name        = "fileshare"
-        analysis    = "public-cloud" #["public-cloud", "private-cloud"]
-        application = ["boxnet-base", "ms-onedrive-base"]
-        direction   = "download" # ["upload", "download", "both"]
-        file_type   = ["script", "jar", "pe", "apk", "archive"]
+        name         = "fileshare"
+        analysis     = "public-cloud" #["public-cloud", "private-cloud"]
+        applications = ["boxnet-base", "ms-onedrive-base"]
+        direction    = "download" # ["upload", "download", "both"]
+        file_types   = ["script", "jar", "pe", "apk", "archive"]
       },
       {
-        name        = "inspect-social"
-        analysis    = "public-cloud" #["public-cloud", "private-cloud"]
-        application = ["facebook-base", "hootsuite-base", "linkedin-downloading", "mastodon", "pinterest-base", "twitter-base", "yammer-base"]
-        direction   = "both" # ["upload", "download", "both"]
-        file_type   = ["any"]
+        name         = "inspect-social"
+        analysis     = "public-cloud" #["public-cloud", "private-cloud"]
+        applications = ["facebook-base", "hootsuite-base", "linkedin-downloading", "mastodon", "pinterest-base", "twitter-base", "yammer-base"]
+        direction    = "both" # ["upload", "download", "both"]
+        file_types   = ["any"]
       }
     ]
   },
@@ -226,11 +226,11 @@ wildfire_anti_virus_profiles = {
     folder      = "Shared"
     rules = [
       {
-        name        = "inspect-facebook"
-        analysis    = "public-cloud" #["public-cloud", "private-cloud"]
-        application = ["facebook-downloading"]
-        direction   = "download" # ["upload", "download", "both"]
-        file_type   = ["any"]
+        name         = "inspect-facebook"
+        analysis     = "public-cloud" #["public-cloud", "private-cloud"]
+        applications = ["facebook-downloading"]
+        direction    = "download" # ["upload", "download", "both"]
+        file_typess  = ["any"]
       }
     ]
     mlav_exception = [
