@@ -70,11 +70,11 @@ file_blocking_profiles = {
     description = "Terraform FB Example1"
     rules = [
       {
-        name        = "rule1"
-        action      = "alert" #["alert", "block", "continue"]
-        file_types  = ["tar"] #["any", "dll", "png", "jpeg", "mp3", "docx", "exe", "zip", "tar", "pdf", "flash", "java", "sh", "other"]
-        application = ["any"]
-        direction   = "both" #["upload", "download", "both"]
+        name         = "rule1"
+        action       = "alert" #["alert", "block", "continue"]
+        file_types   = ["tar"] #["any", "dll", "png", "jpeg", "mp3", "docx", "exe", "zip", "tar", "pdf", "flash", "java", "sh", "other"]
+        applications = ["any"]
+        direction    = "both" #["upload", "download", "both"]
       }
     ]
   }
@@ -83,11 +83,11 @@ file_blocking_profiles = {
     description = "Terraform Shared FB Example1"
     rules = [
       {
-        name        = "rule1"
-        action      = "alert" #["alert", "block", "continue"]
-        file_types  = ["dll"] #["any", "dll", "png", "jpeg", "mp3", "docx", "exe", "zip", "tar", "pdf", "flash", "java", "sh", "other"]
-        application = ["any"]
-        direction   = "download" #["upload", "download", "both"]
+        name         = "rule1"
+        action       = "alert" #["alert", "block", "continue"]
+        file_types   = ["dll"] #["any", "dll", "png", "jpeg", "mp3", "docx", "exe", "zip", "tar", "pdf", "flash", "java", "sh", "other"]
+        applications = ["any"]
+        direction    = "download" #["upload", "download", "both"]
       }
     ]
   }
