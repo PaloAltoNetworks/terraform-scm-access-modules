@@ -12,7 +12,7 @@ vulnerability_protection_profiles = {
         cves           = ["CVE-2017-11882"]
         packet_capture = "extended-capture"
         vendor_ids     = ["cisco"]
-        severity       = ["critical"]
+        severities     = ["critical"]
         category       = "exploit-kit"
         threat_name    = "test1"
       },
@@ -25,7 +25,7 @@ vulnerability_protection_profiles = {
         cves           = ["CVE-2017-11882"]
         packet_capture = "single-packet"
         vendor_ids     = ["juniper"]
-        severity       = ["high"]
+        severities     = ["high"]
         category       = "phishing"
         threat_name    = "test2"
       },
@@ -38,7 +38,7 @@ vulnerability_protection_profiles = {
         cves           = ["CVE-2017-11882"]
         packet_capture = "extended-capture"
         vendor_ids     = ["microsoft"]
-        severity       = ["medium"]
+        severities     = ["medium"]
         category       = "code-execution"
         threat_name    = "test3"
       }
