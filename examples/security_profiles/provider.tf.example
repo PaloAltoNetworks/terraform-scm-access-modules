@@ -1,0 +1,5 @@
+provider "sase" {
+  client_id     = "<SA>@<TSGID>.iam.panserviceaccount.com"
+  client_secret = "<YOUR SECRET>"
+  scope         = "profile tsg_id:<TSGID> email"
+}
