@@ -165,21 +165,22 @@ objects:
           product:
             - "Microsoft Intune Client"
 
-#  terraform-disk-bkp:
-#    folder: Shared
-#    description: "Check if disk backup is enabled and configured correctly"
-#    disk_backup:
-#      criteria:
-#        is_installed: true # Boolean only values
-##        is_enabled: "yes" # Boolean only values
-#        last_backup_time:
+  terraform-disk-bkp:
+    folder: Shared
+    description: "Check if disk backup is enabled and configured correctly"
+    disk_backup:
+      criteria:
+        is_installed: true # Boolean only values
+#        is_enabled: "yes" # Boolean only values
+        last_backup_time:
+          not_available: true
 #          within:
-##            days: 5
+#            days: 7
 #            hours: 7
-#      vendor:
-#        - name: "Apple Inc."
-#          product:
-#            - "Time Machine"
+      vendor:
+        - name: "Apple Inc."
+          product:
+            - "Time Machine"
 
 profiles:
   terraform-corp-prof1:
