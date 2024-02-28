@@ -1,7 +1,6 @@
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![support](https://img.shields.io/badge/Support%20Level-Community-yellowgreen)](./SUPPORT.md)
 ![CI/CD](https://github.com/PaloAltoNetworks/terraform-scm-access-modules/actions/workflows/ci.yml/badge.svg)
 
-# NOTICE: This repo is under heavy active development and is not yet ready for production use. Please use for evaluation only.
 
 ### Instructions on how to build and install the Alpha Terraform Provider
 Go Here &rarr; [Alpha Provider](https://github.com/PaloAltoNetworks/terraform-provider-sase)
