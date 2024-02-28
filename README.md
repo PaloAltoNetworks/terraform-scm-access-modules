@@ -15,8 +15,8 @@ A set of modules for using **Palo Alto Networks SCM Terraform Provider** to prov
 to your applications and users on Strata Cloud Manager. These modules support the management and provisioning
 of policy, objects, remote networks, services connections and more.
 
-Examples provided try to follow along the Prisma SASE Architecture Guides.
-
+Examples provided try to follow along the SCM/Prisma SASE Architecture and usage guides.
+* [What is Strata Cloud Manager and how do I use it?](https://docs.paloaltonetworks.com/cloud-management)
 * [SASE for Users Architecture Guide](https://www.paloaltonetworks.com/resources/guides/prisma-access-for-users-architecture-guide)
 * [SASE for Securing Internet Design Guide ](https://www.paloaltonetworks.com/resources/guides/sase-securing-internet-design-guide)
 * [SASE for Securing Private Apps Design Guide](https://www.paloaltonetworks.com/resources/guides/sase-securing-private-apps-design-guide)
