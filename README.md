@@ -2,8 +2,8 @@
 ![CI/CD](https://github.com/PaloAltoNetworks/terraform-scm-access-modules/actions/workflows/ci.yml/badge.svg)
 
 
-### Instructions on how to build and install the Alpha Terraform Provider
-Go Here &rarr; [Alpha Provider](https://github.com/PaloAltoNetworks/terraform-provider-sase)
+### Instructions on how to use the SCM Terraform Provider
+Go Here &rarr; [General Release Provider](https://registry.terraform.io/providers/PaloAltoNetworks/scm/latest/docs)
 
 
 # Terraform Modules for Palo Alto Networks Strata Cloud Manager
