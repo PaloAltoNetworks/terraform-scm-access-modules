@@ -1,0 +1,83 @@
+---
+
+ipsec_crypto_profiles:
+  terraform-ipsec-crypto-sc1:
+    folder: "Service Connections"
+    lifetime:
+      days: 8
+    esp:
+      authentication:
+        - md5
+      encryption:
+        - aes-256-cbc
+    dh_group: group5
+    lifesize:
+      gb: 1
+  terraform-ipsec-crypto-sc2:
+    folder: "Service Connections"
+    lifetime:
+      minutes: 3600
+    esp:
+      authentication:
+        - sha1
+      encryption:
+        - aes-256-gcm
+    dh_group: group14
+    lifesize:
+      mb: 1
+
+ike_crypto_profiles:
+  terraform-ike-crypto-sc1:
+    folder: "Service Connections"
+    dh_group:
+      - group5
+    encryption:
+      - aes-256-cbc
+    hash:
+      - sha256
+  terraform-ike-crypto-sc2:
+    folder: "Service Connections"
+    dh_group:
+      - group20
+    encryption:
+      - aes-256-gcm
+    hash:
+      - sha384
+
+ike_gateways:
+  terraform-sc-ike-gw1:
+    folder: "Service Connections"
+    peer_address:
+      dynamic_address: true
+    protocol:
+      version: "ikev2"
+      ikev2:
+        dpd:
+          enable: false
+    authentication:
+      pre_shared_key:
+        key: blahblah
+  terraform-sc-ike-gw2:
+    folder: "Service Connections"
+    peer_address:
+      dynamic_address: true
+    protocol:
+      version: "ikev2"
+      ikev2:
+        dpd:
+          enable: false
+    authentication:
+      pre_shared_key:
+        key: blahblah
+
+ipsec_tunnels:
+  terraform-ipsec-tunnel1:
+    folder: "Service Connections"
+    auto_key:
+      ike_gateways:
+        - name: terraform-sc-ike-gw1
+      ipsec_crypto_profile: Others-IPSec-Crypto-Default
+    tunnel_monitor: null
+    anti_replay: false
+    copy_tos: false
+    enable_gre_encapsulation: false

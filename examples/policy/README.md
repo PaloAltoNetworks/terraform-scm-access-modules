@@ -72,7 +72,7 @@ variables and associated values.
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4.6 |
-| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.1.2 |
+| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.2.0 |
 
 ## Providers
 

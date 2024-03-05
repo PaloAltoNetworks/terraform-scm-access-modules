@@ -1,0 +1,151 @@
+---
+crypto_profiles:
+  ike:
+    ikev1-crypto1:
+      folder: "Service Connections"
+      dh_group:
+        - group5
+      encryption:
+        - aes-256-cbc
+      hash:
+        - sha256
+    ikev2-crypto1:
+      folder: "Service Connections"
+      dh_group:
+        - group20
+      encryption:
+        - aes-256-gcm
+      hash:
+        - sha384
+  ipsec:
+    ipsec-crypto1:
+      folder: "Service Connections"
+      lifetime:
+        days: 8
+      esp:
+        authentication:
+          - md5
+        encryption:
+          - aes-256-cbc
+      dh_group: group5
+      lifesize:
+        gb: 1
+    ipsec-crypto2:
+      folder: "Service Connections"
+      lifetime:
+        minutes: 3600
+      esp:
+        authentication:
+          - sha1
+        encryption:
+          - aes-256-gcm
+      dh_group: group14
+      lifesize:
+        mb: 1
+service_connections:
+    dc2sc2:
+      group: "dc2sg1"
+      folder: "Service Connections"
+#      backup__s_c: "dc1sc3"
+      infra_nat: "yes"
+      ipsec:
+        tunnel1:
+          auto_key:
+            ipsec_crypto_profile: "ipsec-crypto2"
+          ike_gateway:
+            peer_address:
+              dynamic_address: true
+            protocol:
+              version: "ikev2"
+              ikev2:
+                dpd:
+                  enable: false
+            authentication:
+              pre_shared_key:
+                key: blahblah
+        tunnel2:
+          auto_key:
+            ipsec_crypto_profile: "ipsec-crypto2"
+          ike_gateway:
+            peer_address:
+              dynamic_address: true
+            protocol:
+              version: "ikev2"
+              ikev2:
+                dpd:
+                  enable: false
+            authentication:
+              pre_shared_key:
+                key: blahblah
+      nat_pool: "10.100.100.0/29"
+      onboarding_type: "classic"
+      no_export_community: "Disabled"
+      protocol:
+        bgp:
+          enable: true
+          local_ip_address: "10.205.0.1"
+          peer_as: "65001"
+          peer_ip_address: "10.206.0.1"
+          qos:
+            qos_profile: "Default Profile"
+            enable: "yes"
+      region: "us-southeast"
+      secondary_wan_enabled: "no"
+      source_nat: true
+      subnets:
+        - "10.101.0.0/23"
+        - "10.200.0.0/23"
+      transport_type: "ipsec"
+    dc2sc1:
+      group: "dc2sg1"
+      folder: "Service Connections"
+#      backup__s_c: "dc2sc2"
+      infra_nat: "yes"
+      ipsec:
+        tunnel1:
+          auto_key:
+            ipsec_crypto_profile: "ipsec-crypto2"
+          ike_gateway:
+            peer_address:
+              dynamic_address: true
+            protocol:
+                version: "ikev2"
+                ikev2:
+                    dpd:
+                      enable: false
+            authentication:
+                pre_shared_key:
+                    key: blahblah
+        tunnel2:
+          auto_key:
+            ipsec_crypto_profile: "ipsec-crypto2"
+          ike_gateway:
+            peer_address:
+              dynamic_address: true
+            protocol:
+              version: "ikev2"
+              ikev2:
+                dpd:
+                  enable: false
+            authentication:
+              pre_shared_key:
+                key: blahblah
+      nat_pool: "10.100.100.0/29"
+      onboarding_type: "classic"
+      no_export_community: "Disabled"
+      protocol:
+        bgp:
+          enable: true
+          local_ip_address: "10.205.0.2"
+          peer_as: "65001"
+          peer_ip_address: "10.206.0.2"
+          qos:
+            qos_profile: "Default Profile"
+            enable: "yes"
+      region: "us-southeast"
+      secondary_wan_enabled: "no"
+      source_nat: true
+      subnets:
+        - "10.101.0.0/23"
+        - "10.200.0.0/23"
+      transport_type: "ipsec"

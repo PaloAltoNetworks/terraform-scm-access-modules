@@ -72,13 +72,13 @@ variables and associated values.
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4.6 |
-| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.1.2 |
+| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_scm"></a> [scm](#provider\_scm) | 0.1.2 |
+| <a name="provider_scm"></a> [scm](#provider\_scm) | 0.5.0 |
 
 ## Modules
 
@@ -88,19 +88,19 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [scm_address_group.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/address_group) | resource |
-| [scm_address_object.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/address_object) | resource |
-| [scm_app_override_rule.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/app_override_rule) | resource |
-| [scm_decryption_exclusion.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/decryption_exclusion) | resource |
-| [scm_decryption_rule.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/decryption_rule) | resource |
-| [scm_external_dynamic_list.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/external_dynamic_list) | resource |
-| [scm_qos_policy_rule.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/qos_policy_rule) | resource |
-| [scm_qos_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/qos_profile) | resource |
-| [scm_schedule.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/schedule) | resource |
-| [scm_security_rule.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/security_rule) | resource |
-| [scm_service.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/service) | resource |
-| [scm_service_group.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/service_group) | resource |
-| [scm_tag.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.1.2/docs/resources/tag) | resource |
+| [scm_address_group.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/address_group) | resource |
+| [scm_address_object.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/address_object) | resource |
+| [scm_app_override_rule.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/app_override_rule) | resource |
+| [scm_decryption_exclusion.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/decryption_exclusion) | resource |
+| [scm_decryption_rule.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/decryption_rule) | resource |
+| [scm_external_dynamic_list.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/external_dynamic_list) | resource |
+| [scm_qos_policy_rule.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/qos_policy_rule) | resource |
+| [scm_qos_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/qos_profile) | resource |
+| [scm_schedule.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/schedule) | resource |
+| [scm_security_rule.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/security_rule) | resource |
+| [scm_service.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/service) | resource |
+| [scm_service_group.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/service_group) | resource |
+| [scm_tag.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/tag) | resource |
 
 ## Inputs
 
