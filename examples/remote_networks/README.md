@@ -2,8 +2,9 @@
 
 A Terraform example for deploying Prisma SASE Remote Networks in a scalable and repeatable manner using either: 
 - yaml
-- json
-- hcl tfvars
+- #TODO:
+  - json
+  - hcl tfvars
 
 This example can be used to familarize oneself with both Prisma SASE Remote Networks and Terraform - 
 it creates everything required to support the deployment and configuration of a remote network.
