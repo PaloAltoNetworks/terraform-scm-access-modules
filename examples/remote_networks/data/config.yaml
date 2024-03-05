@@ -117,14 +117,3 @@ remote_networks:
           authentication:
             pre_shared_key:
               key: blahblah
-
-#ipsec_tunnels:
-#  terraform-ipsec-tunnel1:
-#    auto_key:
-#      ike_gateway:
-#        - name: terraform-ike-1
-#      ipsec_crypto_profile: Others-IPSec-Crypto-Default
-#    tunnel_monitor: null
-#    anti_replay: false
-#    copy_tos: false
-#    enable_gre_encapsulation: false
