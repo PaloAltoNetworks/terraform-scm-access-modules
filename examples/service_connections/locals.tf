@@ -19,6 +19,5 @@ locals {
 
   sc_to_tunnel_data_restructure = { for k, v in module.tunnels.tunnel_data :
   split("-", k)[0] => merge(v, { name = k })... }
-  # convert sc_to_tunnel_data_map for key where the value is a list of maps currently, to a map of maps
   sc_to_tunnel_data_map = { for k, v in local.sc_to_tunnel_data_restructure : k => { for t in v : t.name => t } }
 }
