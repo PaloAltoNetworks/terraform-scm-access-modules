@@ -12,7 +12,7 @@ it creates everything required to support the deployment and configuration of a 
 **NOTE:**
 A Remote Network will not go active until peerings are established with the remote site.
 
-<!-- BEGIN_TF_DOCS -->
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name                                                                      | Version           |
@@ -47,5 +47,4 @@ No resources.
 
 ## Outputs
 
-TBD.
-<!-- END_TF_DOCS -->
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
