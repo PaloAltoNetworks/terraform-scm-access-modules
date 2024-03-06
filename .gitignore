@@ -39,3 +39,6 @@ creds.json
 
 # Ignore Pycache
 __pycache__
+
+# Ignore local testing
+/testing
