@@ -1,11 +1,6 @@
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![support](https://img.shields.io/badge/Support%20Level-Community-yellowgreen)](./SUPPORT.md)
 ![CI/CD](https://github.com/PaloAltoNetworks/terraform-scm-access-modules/actions/workflows/ci.yml/badge.svg)
 
-
-### Instructions on how to use the SCM Terraform Provider
-Go Here &rarr; [SCM Terraform Provider](https://registry.terraform.io/providers/PaloAltoNetworks/scm/latest/docs)
-
-
 # Terraform Modules for Palo Alto Networks Strata Cloud Manager
 
 

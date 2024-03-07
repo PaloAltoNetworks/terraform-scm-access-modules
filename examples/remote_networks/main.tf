@@ -27,12 +27,12 @@ module "remote_networks_with_yaml" {
   depends_on            = [module.tunnels, module.custom_details, module.crypto_profiles]
 }
 
-provider "scm" {
-  client_id     = "YOURCLIENTID"
-  client_secret = "YOURSASECRET"
-  scope         = "profile tsg_id:YOURTSGID email"
-  host          = "api.sase.paloaltonetworks.com"
-}
-
-provider "terracurl" {}
-provider "null" {}
+#provider "scm" {
+#  client_id     = "YOURCLIENTID"
+#  client_secret = "YOURSASECRET"
+#  scope         = "profile tsg_id:YOURTSGID email"
+#  host          = "api.sase.paloaltonetworks.com"
+#}
+#
+#provider "terracurl" {}
+#provider "null" {}
