@@ -6,13 +6,13 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4.6 |
-| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.5.0 |
+| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_scm"></a> [scm](#provider\_scm) | 0.5.0 |
+| <a name="provider_scm"></a> [scm](#provider\_scm) | 0.6.0 |
 
 ## Modules
 
@@ -22,12 +22,12 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [scm_anti_spyware_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/anti_spyware_profile) | resource |
-| [scm_dns_security_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/dns_security_profile) | resource |
-| [scm_file_blocking_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/file_blocking_profile) | resource |
-| [scm_profile_group.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/profile_group) | resource |
-| [scm_vulnerability_protection_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/vulnerability_protection_profile) | resource |
-| [scm_wildfire_anti_virus_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/wildfire_anti_virus_profile) | resource |
+| [scm_anti_spyware_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/anti_spyware_profile) | resource |
+| [scm_dns_security_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/dns_security_profile) | resource |
+| [scm_file_blocking_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/file_blocking_profile) | resource |
+| [scm_profile_group.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/profile_group) | resource |
+| [scm_vulnerability_protection_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/vulnerability_protection_profile) | resource |
+| [scm_wildfire_anti_virus_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/wildfire_anti_virus_profile) | resource |
 
 ## Inputs
 

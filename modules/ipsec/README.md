@@ -6,13 +6,13 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4.6 |
-| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.5.0 |
+| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_scm"></a> [scm](#provider\_scm) | 0.5.0 |
+| <a name="provider_scm"></a> [scm](#provider\_scm) | 0.6.0 |
 
 ## Modules
 
@@ -22,10 +22,10 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [scm_ike_crypto_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/ike_crypto_profile) | resource |
-| [scm_ike_gateway.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/ike_gateway) | resource |
-| [scm_ipsec_crypto_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/ipsec_crypto_profile) | resource |
-| [scm_ipsec_tunnel.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/ipsec_tunnel) | resource |
+| [scm_ike_crypto_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/ike_crypto_profile) | resource |
+| [scm_ike_gateway.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/ike_gateway) | resource |
+| [scm_ipsec_crypto_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/ipsec_crypto_profile) | resource |
+| [scm_ipsec_tunnel.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/ipsec_tunnel) | resource |
 
 ## Inputs
 
