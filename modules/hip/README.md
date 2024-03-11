@@ -55,13 +55,13 @@ variables and associated values.
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4.6 |
-| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.5.0 |
+| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_scm"></a> [scm](#provider\_scm) | 0.5.0 |
+| <a name="provider_scm"></a> [scm](#provider\_scm) | 0.6.0 |
 
 ## Modules
 
@@ -71,8 +71,8 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [scm_hip_object.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/hip_object) | resource |
-| [scm_hip_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/resources/hip_profile) | resource |
+| [scm_hip_object.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/hip_object) | resource |
+| [scm_hip_profile.this](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/resources/hip_profile) | resource |
 
 ## Inputs
 

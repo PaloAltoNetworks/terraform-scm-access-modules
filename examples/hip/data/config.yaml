@@ -173,9 +173,9 @@ objects:
         is_installed: true # Boolean only values
 #        is_enabled: "yes" # Boolean only values
         last_backup_time:
-          not_available: true
-#          within:
-#            days: 7
+          # not_available: true
+          within:
+            days: 7
 #            hours: 7
       vendor:
         - name: "Apple Inc."

@@ -6,14 +6,14 @@
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.4.6 |
 | <a name="requirement_null"></a> [null](#requirement\_null) | 3.2.2 |
-| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.5.0 |
+| <a name="requirement_scm"></a> [scm](#requirement\_scm) | 0.6.0 |
 | <a name="requirement_terracurl"></a> [terracurl](#requirement\_terracurl) | 1.2.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_scm"></a> [scm](#provider\_scm) | 0.5.0 |
+| <a name="provider_scm"></a> [scm](#provider\_scm) | 0.6.0 |
 
 ## Modules
 
@@ -28,9 +28,9 @@
 
 | Name | Type |
 |------|------|
-| [scm_ike_gateway_list.before](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/data-sources/ike_gateway_list) | data source |
-| [scm_ipsec_tunnel_list.before](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/data-sources/ipsec_tunnel_list) | data source |
-| [scm_remote_network_list.before](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.5.0/docs/data-sources/remote_network_list) | data source |
+| [scm_ike_gateway_list.before](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/data-sources/ike_gateway_list) | data source |
+| [scm_ipsec_tunnel_list.before](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/data-sources/ipsec_tunnel_list) | data source |
+| [scm_remote_network_list.before](https://registry.terraform.io/providers/PaloAltoNetworks/scm/0.6.0/docs/data-sources/remote_network_list) | data source |
 
 ## Inputs
 
