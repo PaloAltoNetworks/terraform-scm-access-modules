@@ -24,7 +24,7 @@ locals {
 
 module "security_policy_with_yaml" {
   source         = "PaloAltoNetworks/access-modules/scm//modules/policy"
-  version        = "0.1.4"
+  version        = "0.1.5"
   tags           = local.base_path_yaml["tags"]
   security_rules = local.base_path_yaml["security_rules"]
   services       = local.base_path_yaml["services"]
