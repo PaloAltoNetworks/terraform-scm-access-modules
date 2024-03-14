@@ -39,7 +39,6 @@ security_rules:
     profile_setting:
       group:
         - "best-practice"
-
   terraform-secrule-2:
     folder: "Shared"
     action: "deny"
@@ -67,6 +66,7 @@ security_rules:
       - "any"
     application:
       - "any"
+    log_setting: "Cortex Data Lake"
   terraform-secrule-3:
     folder: "Shared"
     action: "deny"
@@ -94,7 +94,36 @@ security_rules:
       - "any"
     application:
       - "any"
-
+    log_setting: "Cortex Data Lake"
+  terraform-secrule-4:
+    folder: "Shared"
+    action: "allow"
+    source:
+      - "any"
+    source_user:
+      - "any"
+    source_addresses:
+      - "100.127.0.0/16"
+    destination_addresses:
+      - "100.127.0.0/16"
+    destination:
+      - "any"
+    services:
+      - "application-default"
+    description: "Allow GP clients to communicate"
+    position: "pre"
+    from:
+      - "any"
+    to:
+      - "trust"
+    category:
+      - "any"
+    application:
+      - "any"
+    log_setting: "Cortex Data Lake"
+    profile_setting:
+      group:
+        - "best-practice"
 services:
   terraform-tcp-service-1:
     folder: "Mobile Users"
@@ -299,6 +328,52 @@ app_override_rules:
     application: ms-office365
     port: 443
     protocol: tcp
+
+decryption_rules:
+  terraform-decryption-rule-1:
+    folder: "Shared"
+    description: "Decryption Rule for testing"
+    position: "pre"
+    type:
+      ssl_forward_proxy: true
+    category:
+      - health-and-medicine
+    from:
+      - trust
+    to:
+      - untrust
+    source:
+      - any
+    source_user:
+      - any
+    destination:
+      - any
+    service:
+      - any
+    action: "decrypt"
+    log_setting: "Cortex Data Lake"
+  # terraform-decryption-rule-2:
+  #   folder: "Mobile Users"
+  #   description: "Decryption Rule for testing"
+  #   position: "post"
+  #   type:
+  #     ssl_inbound_inspection: "Forward-Trust-CA" #TODO bug with provider for ssl_inbound_inspection
+  #   category:
+  #     - financial-services
+  #   from:
+  #     - trust
+  #   to:
+  #     - untrust
+  #   source:
+  #     - any
+  #   source_user:
+  #     - any
+  #   destination:
+  #     - any
+  #   service:
+  #     - any
+  #   action: "decrypt"
+  #   log_setting: "Cortex Data Lake"
 
 qos_policy_rules:
   terraform-qos-policy-rule-1:

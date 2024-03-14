@@ -110,7 +110,7 @@ No modules.
 | <a name="input_addresses"></a> [addresses](#input\_addresses) | A map of addresses to create | `any` | `{}` | no |
 | <a name="input_app_override_rules"></a> [app\_override\_rules](#input\_app\_override\_rules) | n/a | `any` | `{}` | no |
 | <a name="input_decryption_exclusions"></a> [decryption\_exclusions](#input\_decryption\_exclusions) | A list of decryption exclusions to create | `any` | `{}` | no |
-| <a name="input_decryption_rules"></a> [decryption\_rules](#input\_decryption\_rules) | A map of decryption rules to create | `map(any)` | `{}` | no |
+| <a name="input_decryption_rules"></a> [decryption\_rules](#input\_decryption\_rules) | A map of decryption rules to create | `any` | `{}` | no |
 | <a name="input_external_dynamic_lists"></a> [external\_dynamic\_lists](#input\_external\_dynamic\_lists) | A map of external dynamic lists to create | `any` | `{}` | no |
 | <a name="input_qos_policy_rules"></a> [qos\_policy\_rules](#input\_qos\_policy\_rules) | n/a | `any` | `{}` | no |
 | <a name="input_qos_profiles"></a> [qos\_profiles](#input\_qos\_profiles) | n/a | `any` | `{}` | no |

@@ -41,7 +41,7 @@ variable "security_rules" {
 }
 
 variable "decryption_rules" {
-  type        = map(any)
+  type        = any
   description = "A map of decryption rules to create"
   default     = {}
 }

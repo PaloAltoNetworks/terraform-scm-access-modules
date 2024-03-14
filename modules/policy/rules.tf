@@ -94,8 +94,9 @@ resource "scm_security_rule" "this" {
 
 resource "scm_decryption_rule" "this" {
   for_each           = try(var.decryption_rules, {})
-  name               = try(each.value.name, [])
+  name               = each.key
   folder             = try(each.value.folder, null) # Fail if no folder
+  type               = try(each.value.type, null)   # Required, will fail if not populated
   sources            = length(local.decryption_source_list[each.key]) == 0 ? ["any"] : local.decryption_source_list[each.key]
   destinations       = length(local.decryption_destination_list[each.key]) == 0 ? ["any"] : local.decryption_destination_list[each.key]
   services           = try(each.value.service, [])
@@ -112,7 +113,6 @@ resource "scm_decryption_rule" "this" {
   negate_source      = try(each.value.negate_source, false)
   negate_destination = try(each.value.negate_destination, false)
   tags               = try(each.value.tags, null)
-  type               = try(each.value.type, null)
   profile            = try(each.value.profile, null)
   source_hips        = try(each.value.source_hip, null)
   log_fail           = try(each.value.log_fail, null)
