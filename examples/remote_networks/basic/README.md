@@ -19,10 +19,10 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_crypto_profiles"></a> [crypto\_profiles](#module\_crypto\_profiles) | ../../modules/ipsec | n/a |
-| <a name="module_custom_details"></a> [custom\_details](#module\_custom\_details) | ../../modules/custom_data | n/a |
-| <a name="module_remote_networks_with_yaml"></a> [remote\_networks\_with\_yaml](#module\_remote\_networks\_with\_yaml) | ../../modules/remote_networks | n/a |
-| <a name="module_tunnels"></a> [tunnels](#module\_tunnels) | ../../modules/ipsec | n/a |
+| <a name="module_crypto_profiles"></a> [crypto\_profiles](#module\_crypto\_profiles) | ../../../modules/ipsec | n/a |
+| <a name="module_custom_details"></a> [custom\_details](#module\_custom\_details) | ../../../modules/custom_data | n/a |
+| <a name="module_remote_networks_with_yaml"></a> [remote\_networks\_with\_yaml](#module\_remote\_networks\_with\_yaml) | ../../../modules/remote_networks | n/a |
+| <a name="module_tunnels"></a> [tunnels](#module\_tunnels) | ../../../modules/ipsec | n/a |
 
 ## Resources
 
@@ -43,5 +43,7 @@
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_bandwidth_allocations"></a> [bandwidth\_allocations](#output\_bandwidth\_allocations) | output "remote\_networks\_before" { value = data.scm\_remote\_network\_list.before }  output "ipsec\_tunnels\_before" { value = data.scm\_ipsec\_tunnel\_list.before }  output "ike\_gateways\_before" { value = data.scm\_ike\_gateway\_list.before } |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

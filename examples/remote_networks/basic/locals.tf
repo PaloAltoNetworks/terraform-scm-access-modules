@@ -1,5 +1,5 @@
 locals {
-  remote_networks = yamldecode(file("./data/config.yaml"))["remote_networks"]
+  remote_networks = yamldecode(file("../data/config.yaml"))["remote_networks"]
   creds           = jsondecode(file("./creds.json"))
   ike_restructure = {
     for k, v in local.remote_networks :
@@ -22,11 +22,11 @@ locals {
   ipsec_tunnels_list = [for k, v in local.ipsec_restructure : { for t, i in v : "${k}-${t}" => i }]
   ipsec_tunnels      = merge(local.ipsec_tunnels_list...)
 
-  rn_to_tunnel_data_restructure = {
-    for k, v in module.tunnels.tunnel_data :
-    split("-", k)[0] => merge(v, { name = k })...
-  }
-  rn_to_tunnel_data_map     = { for k, v in local.rn_to_tunnel_data_restructure : k => { for t in v : t.name => t } }
+  # rn_to_tunnel_data_restructure = {
+  #   for k, v in module.tunnels.tunnel_data :
+  #   split("-", k)[0] => merge(v, { name = k })...
+  # }
+  # rn_to_tunnel_data_map     = { for k, v in local.rn_to_tunnel_data_restructure : k => { for t in v : t.name => t } }
   bandwidth_allocations_map = jsondecode(module.custom_details.custom_data["bandwidth-allocations"])
   bandwidth_allocations     = { for ba in local.bandwidth_allocations_map["data"] : ba.name => ba }
 }

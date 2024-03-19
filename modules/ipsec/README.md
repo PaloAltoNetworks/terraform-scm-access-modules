@@ -40,5 +40,6 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_rn_to_tunnel_data_restructure"></a> [rn\_to\_tunnel\_data\_restructure](#output\_rn\_to\_tunnel\_data\_restructure) | n/a |
 | <a name="output_tunnel_data"></a> [tunnel\_data](#output\_tunnel\_data) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
