@@ -1,26 +1,30 @@
 module "custom_details" {
-  source = "../../../modules/custom_data"
-  creds  = local.creds
+  source  = "PaloAltoNetworks/access-modules/scm//modules/custom_data"
+  version = "0.1.6"
+  creds   = local.creds
   get_config = {
     bandwidth-allocations = {}
   }
 }
 
 module "crypto_profiles" {
-  source                = "../../../modules/ipsec"
+  source                = "PaloAltoNetworks/access-modules/scm//modules/ipsec"
+  version               = "0.1.6"
   ike_crypto_profiles   = yamldecode(file("../data/config.yaml"))["crypto_profiles"]["ike"]   # These are general crypto profiles
   ipsec_crypto_profiles = yamldecode(file("../data/config.yaml"))["crypto_profiles"]["ipsec"] # These are general crypto profiles
 }
 
 module "tunnels" {
-  source        = "../../../modules/ipsec"
+  source        = "PaloAltoNetworks/access-modules/scm//modules/ipsec"
+  version       = "0.1.6"
   ike_gateways  = local.ike_gateways
   ipsec_tunnels = local.ipsec_tunnels
   depends_on    = [module.crypto_profiles]
 }
 
 module "remote_networks_with_yaml" {
-  source                = "../../../modules/remote_networks"
+  source                = "PaloAltoNetworks/access-modules/scm//modules/remote_networks"
+  version               = "0.1.6"
   bandwidth_allocations = local.bandwidth_allocations
   remote_networks       = local.remote_networks
   tunnels               = module.tunnels.rn_to_tunnel_data_restructure

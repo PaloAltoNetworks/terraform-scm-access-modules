@@ -19,10 +19,10 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_crypto_profiles"></a> [crypto\_profiles](#module\_crypto\_profiles) | ../../../modules/ipsec | n/a |
-| <a name="module_custom_details"></a> [custom\_details](#module\_custom\_details) | ../../../modules/custom_data | n/a |
-| <a name="module_remote_networks_with_yaml"></a> [remote\_networks\_with\_yaml](#module\_remote\_networks\_with\_yaml) | ../../../modules/remote_networks | n/a |
-| <a name="module_tunnels"></a> [tunnels](#module\_tunnels) | ../../../modules/ipsec | n/a |
+| <a name="module_crypto_profiles"></a> [crypto\_profiles](#module\_crypto\_profiles) | PaloAltoNetworks/access-modules/scm//modules/ipsec | 0.1.6 |
+| <a name="module_custom_details"></a> [custom\_details](#module\_custom\_details) | PaloAltoNetworks/access-modules/scm//modules/custom_data | 0.1.6 |
+| <a name="module_remote_networks_with_yaml"></a> [remote\_networks\_with\_yaml](#module\_remote\_networks\_with\_yaml) | PaloAltoNetworks/access-modules/scm//modules/remote_networks | 0.1.6 |
+| <a name="module_tunnels"></a> [tunnels](#module\_tunnels) | PaloAltoNetworks/access-modules/scm//modules/ipsec | 0.1.6 |
 
 ## Resources
 
