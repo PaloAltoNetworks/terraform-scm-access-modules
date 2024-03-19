@@ -1,5 +1,5 @@
 locals {
-  remote_networks = yamldecode(file("../data/config.yaml"))["remote_networks"]
+  remote_networks = yamldecode(file("./data/config.yaml"))["remote_networks"]
   creds           = jsondecode(file("./creds.json"))
   ike_restructure = {
     for k, v in local.remote_networks :

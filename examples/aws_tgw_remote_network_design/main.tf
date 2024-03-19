@@ -10,8 +10,8 @@ module "custom_details" {
 module "crypto_profiles" {
   source                = "PaloAltoNetworks/access-modules/scm//modules/ipsec"
   version               = "0.1.6"
-  ike_crypto_profiles   = yamldecode(file("../data/config.yaml"))["crypto_profiles"]["ike"]   # These are general crypto profiles
-  ipsec_crypto_profiles = yamldecode(file("../data/config.yaml"))["crypto_profiles"]["ipsec"] # These are general crypto profiles
+  ike_crypto_profiles   = yamldecode(file("./data/config.yaml"))["crypto_profiles"]["ike"]   # These are general crypto profiles
+  ipsec_crypto_profiles = yamldecode(file("./data/config.yaml"))["crypto_profiles"]["ipsec"] # These are general crypto profiles
 }
 
 module "tunnels" {
