@@ -16,10 +16,10 @@ jobs:
 
     steps:
       - name: Check out source
-        uses: actions/checkout@v3.5.2
+        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
 
       - name: Set up Python
-        uses: actions/setup-python@v4.6.0
+        uses: actions/setup-python@57ded4d7d5e986d7296eab16560982c6dd7c923b # v4.6.0
         with:
           # Semantic version range syntax (like 3.x) or the exact Python version
           python-version: '3.11.0'
@@ -48,7 +48,7 @@ jobs:
           python-version: 3.8
       - name: Test with Checkov
         id: checkov
-        uses: bridgecrewio/checkov-action@master
+        uses: bridgecrewio/checkov-action@98f5b5581804b68fef3ca9540be71c4d35c3d443 # master
         with:
           directory: .
           framework: terraform
